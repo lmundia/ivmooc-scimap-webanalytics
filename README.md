@@ -18,5 +18,5 @@ Steps:
 5. Execute stats_parser.py as
 
     python stats_parser.py
-6. The output CSV files will be located in output folder. Start Analyzing
+6. The output CSV files will be located in output_tables folder. Start Analyzing
 using Excel/Tableau or tool of your choice

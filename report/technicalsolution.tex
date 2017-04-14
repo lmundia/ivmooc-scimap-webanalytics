@@ -14,21 +14,21 @@ only 2016 the Weblizer HTML reports are available for last 10 years(March
 details of Weblizer reports, the exact HTML format and statistics captured is
  explained in the section \ref{sourcedata}.
 
-\item Combine the data in single queriable store:
+\item Combine the data in single data store which can be queried:
 Since the Weblizer HTML reports does not allow us to query the data, we
 required to convert them into a structured format. We decided to convert the
-HTML reports into comma separated format (CSV). The section \ref{dataparser}
+HTML reports into comma-separated format (CSV). The section \ref{dataparser}
 explains the implementation of the parser program which converts data into
 CSV format. While designing the CSV format, we added metadata fields like
 year and month so that we can filter the data for a specific duration.
 
 \item Upload the data in visualization tool:
 We used Tableau \cite{tableau} as our visualization tool for the
-visualizations. Tableau support importing of CSV data.
+visualizations. Tableau supports importing CSV data.
 \item Create individual visualizations:
 We created multiple reports in Tableau to satisfy various project
 requirements. Each Tableau report tries to answer a group of requirements for
- the project. Each report follow a similar pattern of filtering the data so
+ the project. Each report follows a similar pattern of filtering the data so
  as to maintain consistency across all reports. \ref{viz} section explains
  each visualization in detail.
 \item Create a single dashboard by combining all visualizations:
@@ -39,7 +39,7 @@ While it is useful to analyze each dataset separately, it also helps to get a
  slice and dice data and analyze the usage pattern effectively.
 \end{itemize}
 
-\begin{figure}[datapipeline]
+\begin{figure}
 \centering
 \fbox{\includegraphics[width=\linewidth]{img/datapipeline.png}}
 \caption{Data Pipeline.}
@@ -48,7 +48,7 @@ While it is useful to analyze each dataset separately, it also helps to get a
 
 
 \subsection{Source Data} \label{sourcedata}
-\begin{figure}[samplewebanalyzer]
+\begin{figure}
 \centering
 \fbox{\includegraphics[width=\linewidth]{img/samplewebanalyzerreport.png}}
 \caption{Sample Webanalyzer Report.}
@@ -60,7 +60,7 @@ are used as source data. These reports are available for last 10 years on
 monthly basis. Each report has following sub-sections
  \begin{itemize}
  \item Monthly statistics
- \item Daily statisitcs
+ \item Daily statistics
  \item Hourly statistics
  \item Top 100 URLs
  \item Top 10 entry pages
@@ -89,15 +89,13 @@ the data and writes it in CSV file.
  figure \ref{fig:daystats} shows sample records from the DAYSTATS.csv which
  is one of the output CSV created by the data parser.
 
- \begin{figure}[daystats]
+ \begin{figure}
 \centering
 \fbox{\includegraphics[width=\linewidth]{img/dailystats.png}}
 \caption{Daily Statistics Sample Records.}
 \label{fig:daystats}
 \end{figure}
 
-\subsection{Visualizing in Tableau}
-Explain how different reports and generated and then integrated in one dashboard
 
 
 
